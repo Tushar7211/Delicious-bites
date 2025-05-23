@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us - Delicious Bites</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans:wght@400;700&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #ffec3f;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #f7d800;
+      padding: 20px 40px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-family: 'Pacifico', cursive;
+      font-size: 3rem;
+      color: #4b3e00;
+      letter-spacing: 2px;
+    }
+
+    main {
+      flex-grow: 1;
+      max-width: 600px;
+      margin: 40px auto;
+      background: #fff8a6;
+      border-radius: 12px;
+      padding: 30px 40px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    main h2 {
+      font-family: 'Pacifico', cursive;
+      font-size: 2.5rem;
+      color: #4b3e00;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-top: 15px;
+      font-weight: 700;
+      color: #5c4b00;
+      font-size: 1.1rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      margin-top: 8px;
+      padding: 10px 15px;
+      font-size: 1rem;
+      border: 2px solid #f7d800;
+      border-radius: 8px;
+      resize: vertical;
+      font-family: 'Open Sans', sans-serif;
+      transition: border-color 0.3s ease;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    textarea:focus {
+      outline: none;
+      border-color: #4b3e00;
+      background-color: #fffbe0;
+    }
+
+    textarea {
+      min-height: 120px;
+    }
+
+    button {
+      margin-top: 25px;
+      background-color: #4b3e00;
+      color: #ffec3f;
+      padding: 12px 25px;
+      font-weight: 700;
+      border: none;
+      border-radius: 30px;
+      font-family: 'Pacifico', cursive;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      align-self: center;
+      width: 150px;
+    }
+
+    button:hover {
+      background-color: #6b5500;
+    }
+
+    footer {
+      background-color: #f7d800;
+      padding: 15px 0;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #4b3e00;
+      box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
+      margin-top: auto;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        margin: 20px 15px;
+        padding: 20px;
+      }
+
+      header h1 {
+        font-size: 2.2rem;
+      }
+
+      main h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><a href="index.html">Delicious Bites</a></h1>
+  </header>
+
+  <main>
+    <h2>Contact Us</h2>
+    <form action="#" method="post">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="your.email@example.com" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+
+     <button type="submit">Send</button>
+    </form>
+  </main>
+
+  <footer>
+    &copy; 2025 Delicious Bites. All rights reserved.
+  </footer>
+</body>
+</html>
